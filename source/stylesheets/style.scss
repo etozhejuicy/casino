@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+// base import
+@import './base/grid';
+@import './base/layouts';
+@import './base/mixins';
+@import './base/variables';
+
+// components
+@import './components/btn';
+
+// sections import
+@import './sections/catalog';
+@import './sections/footer';
+@import './sections/header';
