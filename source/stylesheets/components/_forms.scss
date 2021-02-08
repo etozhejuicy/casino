@@ -352,6 +352,9 @@ select.form-control {
                 background-size: 115px 110px;
                 right: -203.7px;
             }
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
     }
 }

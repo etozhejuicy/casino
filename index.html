@@ -119,7 +119,7 @@
           <div class="slider-home">
             <div class="slider-home__inner">
               <ul class="slidewrapper">
-                <li class="slide">
+                <li class="slide shown">
                   <div class="banner-content">
                     <div class="sup-title">FIRST bonuses</div>
                     <div class="title">Welcome BonusPackage</div>
@@ -128,9 +128,33 @@
                   </div>
                   <img src="./assets/img/slider/1.png" alt="1" class="slide-img">
                 </li>
-                <li class="slide"><img src="./assets/img/slider/1.png" alt="2" class="slide-img"></li>
-                <li class="slide"><img src="./assets/img/slider/1.png" alt="3" class="slide-img"></li>
-                <li class="slide"><img src="./assets/img/slider/1.png" alt="4" class="slide-img"></li>
+                <li class="slide">
+                  <div class="banner-content">
+                    <div class="sup-title">FIRST bonuses</div>
+                    <div class="title">Welcome BonusPackage</div>
+                    <div class="sub-title">200 bonus and 100 free spins</div>
+                    <div class="action"><button class="btn btn-primary font-weight-bolder btn-cta">Deposit</button></div>
+                  </div>
+                  <img src="./assets/img/slider/2.png" alt="2" class="slide-img">
+                </li>
+                <li class="slide">
+                  <div class="banner-content">
+                    <div class="sup-title">FIRST bonuses</div>
+                    <div class="title">Welcome BonusPackage</div>
+                    <div class="sub-title">200 bonus and 100 free spins</div>
+                    <div class="action"><button class="btn btn-primary font-weight-bolder btn-cta">Deposit</button></div>
+                  </div>
+                  <img src="./assets/img/slider/3.png" alt="3" class="slide-img">
+                </li>
+                <li class="slide">
+                  <div class="banner-content">
+                    <div class="sup-title">FIRST bonuses</div>
+                    <div class="title">Welcome BonusPackage</div>
+                    <div class="sub-title">200 bonus and 100 free spins</div>
+                    <div class="action"><button class="btn btn-primary font-weight-bolder btn-cta">Deposit</button></div>
+                  </div>
+                  <img src="./assets/img/slider/4.png" alt="4" class="slide-img">
+                </li>
               </ul>
             </div>
             <div class="slider-container">
@@ -195,7 +219,30 @@
   </section>
   <footer>
   </footer>
+<script>
+var btn_prev = document.querySelector('.slider-navigation .prev-btn'),
+    btn_next = document.querySelector('.slider-navigation .next-btn');
+    
+var images = document.querySelectorAll('.slidewrapper .slide');
+var i = 0;
+btn_prev.onclick = function(){
+   images[i].className = "";
+    i = i - 1;
+    if( i < 0){
+      i = images.length - 1;  
+    }
+    images[i].className = "shown";
+};
 
+btn_next.onclick = function(){
+    images[i].className = "";
+    i = i + 1; //i++
+    if( i >= images.length){
+      i = 0;  
+    }
+    images[i].className = "shown";
+};
+</script>
 </body>
 
 </html>
