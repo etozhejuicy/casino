@@ -4201,6 +4201,38 @@ html {
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  border: 0;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid #121423;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #121423;
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 2px;
+  background: #32448c;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
 .btn,
 a.btn {
   position: relative;
@@ -5982,6 +6014,12 @@ body {
 
 .section__partners .partners-row .partner {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-area: auto / auto / auto / auto;
   place-self: auto;
   height: 41px;

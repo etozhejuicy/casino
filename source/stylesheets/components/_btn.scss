@@ -1,3 +1,34 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+    border: 0;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid #121423;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #121423;
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    height: 2px;
+    background: #32448c;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-resizer {
+    display: none;
+}
+
 .btn,
 a.btn {
     position: relative;
