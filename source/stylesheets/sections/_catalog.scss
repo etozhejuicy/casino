@@ -483,7 +483,7 @@ body {
             & .game {
                 cursor: pointer;
                 position: relative;
-                height: 188px;
+                // height: 188px;
                 border-radius: 17px;
                 background-color: rgba(72, 80, 143, 1);
                 grid-area: auto / auto / auto / auto;
@@ -614,6 +614,174 @@ body {
                         border: 5px solid #4f00f7;
                     }
                 }
+            }
+        }
+    }
+    &__winningnow {
+        background-color: #20263e;
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+        & .winning-inner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 15px 0 24px;
+            @media (max-width: 767px) {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            & .winning-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: #ffffff;
+                min-width: 219px;
+                @media (max-width: 767px) {
+                    margin-bottom: 25px;
+                }
+            }
+            & .winning-area {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                mask-image: linear-gradient(
+                    90deg,
+                    transparent 1%,
+                    rgba(0, 0, 0, 0.25) 30px,
+                    #000 60px,
+                    #000 calc(100% - 60px),
+                    rgba(0, 0, 0, 0.25) calc(100% - 43px),
+                    transparent
+                );
+                overflow-y: hidden;
+                overflow-x: auto;
+                &::-webkit-scrollbar {
+                    @media (min-width: 1200px) {
+                        display: none;
+                    }
+                    width: 8px;
+                    height: 5px;
+                    border: 0;
+                }
+                &::-webkit-scrollbar-button {
+                    display: none;
+                }
+                &::-webkit-scrollbar-track {
+                    border: 1px solid #121423;
+                }
+                &::-webkit-scrollbar-track-piece {
+                    background-color: #121423;
+                    width: 1px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    width: 8px;
+                    height: 2px;
+                    background: #32448c;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+                }
+                &::-webkit-resizer {
+                    display: none;
+                }
+                & .item {
+                    cursor: pointer;
+                    min-width: 175px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                    & .image {
+                        margin-right: 6px;
+                        padding: 0;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        & .name {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #ffffff;
+                        }
+                        & .supname {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #87e389;
+                            text-decoration: underline;
+                        }
+                        & .summary {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__partners {
+        margin-bottom: 50px;
+        & .partners-row {
+            max-width: 1045px;
+            margin: 0 auto;
+            padding: 0;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr;
+            gap: 15px;
+            place-items: stretch;
+            place-content: stretch;
+            grid-auto-columns: 30px;
+            grid-auto-rows: 30px;
+            grid-auto-flow: row;
+            @media (max-width: 1200px) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 2fr;
+                gap: 30px;
+            }
+            @media (max-width: 991px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 3fr;
+                gap: 45px;
+            }
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 4fr;
+            }
+            @media (max-width: 360px) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 8fr;
+            }
+            & .partner {
+                position: relative;
+                grid-area: auto / auto / auto / auto;
+                place-self: auto;
+                height: 41px;
+                margin: 0 auto;
             }
         }
     }
