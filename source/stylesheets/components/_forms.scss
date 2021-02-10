@@ -189,9 +189,30 @@ select.form-control {
             flex: 1 0 30%;
         }
     }
-    & .promocode {
+    & .promocode-area {
+        position: relative;
         flex: 0 1 156px;
-        width: auto;
+        width: 156px;
+        & .promocode-question {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 11px;
+            width: 6px;
+            height: 15px;
+            display: block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #8c91ba;
+            transform: translate(0, -50%);
+        }
+    }
+    & .promocode {
+        // flex: 0 1 156px;
+        // width: auto;
     }
     & .choose-sign {
         display: flex;

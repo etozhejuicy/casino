@@ -4601,11 +4601,30 @@ select.form-control:focus::-ms-value {
           flex: 1 0 30%;
 }
 
-.form-login .promocode {
+.form-login .promocode-area {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 156px;
           flex: 0 1 156px;
-  width: auto;
+  width: 156px;
+}
+
+.form-login .promocode-area .promocode-question {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  width: 6px;
+  height: 15px;
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8c91ba;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .form-login .choose-sign {
