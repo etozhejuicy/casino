@@ -5889,7 +5889,7 @@ body {
 }
 
 .section__newgames .games-box .game .game-content .label::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -7.5px;
   top: 0;
@@ -6225,101 +6225,6 @@ body {
   color: #ffffff;
 }
 
-.section__statistics {
-  padding-top: 57px;
-  padding-bottom: 83px;
-}
-
-.section__statistics .table-result {
-  display: -ms-grid;
-  display: grid;
-  height: 100%;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[1];
-      grid-template-rows: repeat(1, 1fr);
-  place-items: stretch;
-  place-content: stretch;
-  gap: 0;
-}
-
-.section__statistics .table-result .game-month {
-  position: relative;
-}
-
-.section__statistics .table-result .game-month .top-title {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.section__statistics .table-result .game-month .game-month-image {
-  position: relative;
-  height: 360px;
-}
-
-.section__statistics .table-result .game-month .game-month-image .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  bottom: 18px;
-  left: 50%;
-  max-width: 350px;
-  width: 100%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.section__statistics .table-result .game-month .game-month-image .content .sub-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 9.4px;
-}
-
-.section__statistics .table-result .game-month .game-month-image .content .btn-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  max-width: 142px;
-}
-
-.section__statistics .table-result .game-month .game-month-image .content .btn-area .btn-game-of-year {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-}
-
 .section__partners {
   margin-bottom: 50px;
 }
@@ -6490,38 +6395,13 @@ footer.footer .footer-bottom {
 }
 
 footer.footer .footer-bottom .bottom-up-area {
-  display: -ms-grid;
-  display: grid;
-  height: 100%;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[1];
-      grid-template-rows: repeat(1, 1fr);
-  gap: 8px;
-  place-items: stretch;
-  place-content: stretch;
-  grid-auto-columns: 30px;
-  grid-auto-rows: 30px;
-  grid-auto-flow: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 44px 0 21px;
-}
-
-@media (max-width: 1024px) {
-  footer.footer .footer-bottom .bottom-up-area {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 991px) {
-  footer.footer .footer-bottom .bottom-up-area {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (0fr)[3];
-        grid-template-rows: repeat(3, 0fr);
-  }
 }
 
 footer.footer .footer-bottom .age {
@@ -6581,39 +6461,8 @@ footer.footer .footer-bottom .footer-menu-area {
   grid-auto-flow: row;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   footer.footer .footer-bottom .footer-menu-area {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 1024px) {
-  footer.footer .footer-bottom .footer-menu-area {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[1];
-        grid-template-rows: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 991px) {
-  footer.footer .footer-bottom .footer-menu-area {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (0fr)[1];
-        grid-template-rows: repeat(1, 0fr);
-  }
-}
-
-@media (max-width: 768px) {
-  footer.footer .footer-bottom .footer-menu-area {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (0fr)[2];
-        grid-template-rows: repeat(2, 0fr);
     margin-left: 0;
   }
 }
@@ -6671,40 +6520,7 @@ footer.footer .footer-bottom .footer-menu-area .footer-menu .link:last-of-type {
   margin-bottom: 0;
 }
 
-footer.footer .footer-bottom .left-side {
-  max-width: 250px;
-  margin-right: 25px;
-}
-
-@media (max-width: 1440px) {
-  footer.footer .footer-bottom .left-side {
-    max-width: 100%;
-  }
-}
-
-footer.footer .footer-bottom .center-side {
-  max-width: 650px;
-}
-
-@media (max-width: 1200px) {
-  footer.footer .footer-bottom .center-side {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  footer.footer .footer-bottom .center-side {
-    margin-bottom: 35px;
-  }
-}
-
-footer.footer .footer-bottom .right-side {
-  max-width: 387px;
-  width: auto;
-}
-
-footer .copyrite {
+footer.footer .footer-bottom .copyrite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6729,13 +6545,37 @@ footer .copyrite {
 }
 
 @media (max-width: 991px) {
-  footer .copyrite {
+  footer.footer .footer-bottom .copyrite {
     text-align: left;
   }
 }
 
-footer .copyrite .text-aqua {
+footer.footer .footer-bottom .copyrite .text-aqua {
   display: contents;
   color: #00FFD1;
+}
+
+footer.footer .footer-bottom .left-side {
+  max-width: 250px;
+}
+
+@media (max-width: 991px) {
+  footer.footer .footer-bottom .left-side {
+    margin-bottom: 35px;
+  }
+}
+
+footer.footer .footer-bottom .center-side {
+  max-width: 650px;
+}
+
+@media (max-width: 991px) {
+  footer.footer .footer-bottom .center-side {
+    margin-bottom: 35px;
+  }
+}
+
+footer.footer .footer-bottom .right-side {
+  max-width: 387px;
 }
 /*# sourceMappingURL=style.css.map */
