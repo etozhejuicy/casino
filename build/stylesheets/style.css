@@ -5626,6 +5626,18 @@ body {
   }
 }
 
+.section__newgames .games-box .game .game-content .label::before {
+  content: '';
+  position: absolute;
+  left: -7.5px;
+  top: 0;
+  border: 7.5px solid transparent;
+  border-bottom: 15px solid;
+  border-right: 0px solid;
+  border-top: 15px solid;
+  border-color: #eb0255 #eb0255 #eb0255 transparent;
+}
+
 .section__newgames .games-box .game .game-content .label__redgradient {
   background: -webkit-gradient(linear, right top, left top, from(#1d1269), color-stop(27.07%, #eb0255));
   background: linear-gradient(270deg, #1d1269 0%, #eb0255 27.07%);

@@ -539,6 +539,27 @@ body {
                         @media (max-width: 1199px) {
                             top: 10px;
                         }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: -7.5px;
+                            top: 0;
+                            border: 7.5px solid transparent;
+                            border-bottom: 15px solid;
+                            border-right: 0px solid;
+                            border-top: 15px solid;
+                            border-color: #eb0255 #eb0255 #eb0255 transparent;
+                        }
+                        // &::before {
+                        //     content: "";
+                        //     width: 30px;
+                        //     height: 30px;
+                        //     position: absolute;
+                        //     top: 0px;
+                        //     left: -15px;
+                        //     background-color: transparent;
+                        //     transform: scale(0.707) rotate(45deg);
+                        // }
                         &__redgradient {
                             background: linear-gradient(270deg, #1d1269 0%, #eb0255 27.07%);
                         }
