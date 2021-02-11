@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Название страницы</title>
+  <title>Joy Casino</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./build/stylesheets/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -90,7 +90,10 @@
             <form class="sign-in">
               <input type="email" class="form-control" value="" placeholder="E-mail *" required>
               <div class="pass-and-cur">
-                <input type="password" class="form-control password" value="" placeholder="Password *" required />
+                <div class="password-area">
+                  <input type="password" id="password-input" class="form-control password" value="" placeholder="Password *" required />
+                  <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                </div>
                 <select value="" class="form-control currency" placeholder="Currency *" required>
                   <option>Dollar</option>
                   <option>Euro</option>
@@ -165,20 +168,16 @@
                   <img src="./assets/img/slider/4.png" alt="4" class="slide-img">
                 </li>
               </ul>
-            </div>
-            <div class="slider-container">
-              <div class="slider-container__inner">
-                <div class="slider-navigation">
-                  <div class="slider-btn prev-btn"></div>
-                  <div class="slider-btn next-btn"></div>
-                </div>
-                <ul class="nav-btns">
-                  <li class="slide-nav-btn active"></li>
-                  <li class="slide-nav-btn"></li>
-                  <li class="slide-nav-btn"></li>
-                  <li class="slide-nav-btn"></li>
-                </ul>
+              <div class="slider-navigation">
+                <div class="slider-btn prev-btn"></div>
+                <div class="slider-btn next-btn"></div>
               </div>
+              <ul class="nav-btns">
+                <li class="slide-nav-btn active"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -200,7 +199,7 @@
           <div class="dropdown">
             <a href="javascript://" class="link dropdown__link arrow-down">All category</a>
             <div class="dropdown-content">
-              Здарова, епта!
+              Dropdown-menu...
             </div>
           </div>
         </nav>
@@ -434,18 +433,18 @@
             <div class="icon icon__cards"></div>
             <div class="statistica">
               <div class="numbers">+100</div>
-              <div class="text">Players</div>
+              <div class="text">Players every day</div>
             </div>
           </div>
           <div class="item">
-            <div class="icon icon__cards"></div>
+            <div class="icon icon__flag"></div>
             <div class="statistica">
               <div class="numbers">30</div>
               <div class="text">Providers</div>
             </div>
           </div>
           <div class="item">
-            <div class="icon icon__cards"></div>
+            <div class="icon icon__cubs"></div>
             <div class="statistica">
               <div class="numbers">+500</div>
               <div class="text">of over games</div>
@@ -708,30 +707,8 @@
       </aside>
     </div>
   </footer>
-  <script>
-    var btn_prev = document.querySelector('.slider-navigation .prev-btn'),
-      btn_next = document.querySelector('.slider-navigation .next-btn');
-
-    var images = document.querySelectorAll('.slidewrapper .slide');
-    var i = 0;
-    btn_prev.onclick = function () {
-      images[i].className = "";
-      i = i - 1;
-      if (i < 0) {
-        i = images.length - 1;
-      }
-      images[i].className = "shown";
-    };
-
-    btn_next.onclick = function () {
-      images[i].className = "";
-      i = i + 1; //i++
-      if (i >= images.length) {
-        i = 0;
-      }
-      images[i].className = "shown";
-    };
-  </script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/password-input.js"></script>
 </body>
 
 </html>

@@ -50,11 +50,11 @@ footer {
             & .bottom-up-area {
                 display: grid;
                 height: 100%;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: 1fr 2fr 2fr;
                 grid-template-rows: repeat(1, 1fr);
                 gap: 8px;
                 place-items: stretch;
-                place-content: stretch;
+                place-content: space-between;
                 grid-auto-columns: 30px;
                 grid-auto-rows: 30px;
                 grid-auto-flow: row;
@@ -105,7 +105,7 @@ footer {
                 height: 100%;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(1, 1fr);
-                gap: 8px;
+                gap: 25px;
                 place-items: stretch;
                 place-content: stretch;
                 grid-auto-columns: 30px;
@@ -138,7 +138,6 @@ footer {
                     align-items: flex-start;
                     max-width: 150px;
                     width: 100%;
-                    padding-right: 20px;
                     @media (max-width: 991px) {
                         margin-bottom: 30px;
                     }
@@ -187,6 +186,14 @@ footer {
             & .right-side {
                 max-width: 387px;
                 width: auto;
+                @media (min-width: 1025px) {
+                    margin-left: auto;
+                    margin-right: 30px;
+                }
+                @media (min-width: 1200px) and (max-width: 1520px) {
+                    max-width: 320px;
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -204,6 +211,7 @@ footer {
         text-align: center;
         color: #ffffff;
         opacity: 0.8;
+        margin: 0 auto;
         @media (max-width: 991px) {
             text-align: left;
         }
